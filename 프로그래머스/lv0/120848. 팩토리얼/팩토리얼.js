@@ -1,9 +1,8 @@
 function solution(n) {
-    let count = 1;
-    
-    for(let i=1; i<=n; i = i*count){
-        count++;
-    }
-    
-    return count-1
+    return reverseFactory(n,2);
+}
+
+function reverseFactory(n,count){
+    const result = Math.floor(n/count);
+    return result <= 1 ? count : reverseFactory(result, count+1);
 }
