@@ -1,10 +1,9 @@
 function solution(i, j, k) {
-    var answer = 0;
+    var answer = '';
     
-    for(let s=i; s<=j; s++){
-        let check = s.toString().split('').filter((v) => v == k);
-        answer += check.length;
+    for(i; i<=j; i++){
+        answer += i;
     }
     
-    return answer;
+    return answer.split('').filter((v) => v == k).length;
 }
