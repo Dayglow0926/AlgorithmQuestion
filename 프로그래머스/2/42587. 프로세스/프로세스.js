@@ -16,7 +16,5 @@ function solution(priorities, location) {
             else location--;
         }
     } 
-    
-    
     return answer;
 }
