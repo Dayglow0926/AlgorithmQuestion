@@ -1,5 +1,6 @@
 function solution(bridge_length, weight, truck_weights) {
     var answer = 0;
+    //다리를 모방한 큐
     let onTheBridge = [];
     for(let i=0; i<truck_weights.length; ){
         //시간초
