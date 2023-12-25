@@ -39,8 +39,7 @@ class MinHeap {
     pop(){
         if(this.size() == 1){
             return this.heap.pop();
-        }
-        if(this.size() == 0){
+        }else if(this.size() == 0){
             return null;
         }
         
