@@ -1,13 +1,7 @@
 function solution(s) {
-    let arr = s.split(' ').map((v) => {
-        const wordArr = v.toLowerCase().split('');
-        
-        try{
-            wordArr[0] = wordArr[0].toUpperCase();   
-        }catch(e){
-        }finally{
-            return wordArr.join('')
-        }
-    })
+    let arr = s.split(' ').map((v) => 
+        v.charAt(0).toUpperCase()
+        +v.substring(1).toLowerCase()
+    )
     return arr.join(' ');
 }
